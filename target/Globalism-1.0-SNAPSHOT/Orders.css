@@ -1,0 +1,154 @@
+*
+{
+
+}
+body
+{
+
+}
+@font-face
+{
+    font-family: ChangaRegular;
+    src: url("Resources/Fonts/Changa-Regular.ttf");
+}
+#header-d
+{
+    background: #eee;
+    width: 90%;
+    padding: 20px 30px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid lightgray;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    z-index: 0;
+}
+#header-d p
+{
+    user-select: none;
+    -moz-user-select: none;
+}
+#header-d a
+{
+    color: #159a00;
+    user-select: none;
+    -moz-user-select: none;
+    transition: .2s;
+}
+#header-d a:hover
+{
+    opacity: 0.6;
+}
+#products-container
+{
+    color: #2f3542;
+    height: auto;
+    overflow: hidden;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px auto;
+    text-align: right;
+}
+#order-container
+{
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+.order-customer
+{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    background: #2f3542;
+    color: white;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    font-size: 18px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.customer-detail
+{
+    width: 25%;
+    font-size: 16px;
+    margin-left: 3px;
+}
+.customer-name
+{
+
+}
+.customer-email
+{
+
+}
+.customer-address
+{
+
+}
+.customer-phone
+{
+
+}
+.order-items-container
+{
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+.order-item
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.order-item:hover
+{
+    background: #eeeeee73;
+}
+.product-detail
+{
+    width: 33.3%;
+}
+.product-name
+{
+
+}
+.product-amount
+{
+
+}
+.order-result
+{
+    padding: 20px 15px;
+    box-sizing: border-box;
+    border: 0 solid #2f3542;
+    border-top-width: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.total
+{
+
+}
+.order-result a
+{
+    color: #ff6b6b;
+    transition: .2s;
+}
+.order-result a:hover
+{
+    opacity: .8;
+}
+

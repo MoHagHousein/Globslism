@@ -1,0 +1,201 @@
+*
+{
+
+}
+body
+{
+
+}
+@font-face
+{
+    font-family: ChangaRegular;
+    src: url("Resources/Fonts/Changa-Regular.ttf");
+}
+#header-d
+{
+    background: #eee;
+    width: 90%;
+    padding: 20px 30px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid lightgray;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    z-index: 0;
+}
+#header-d p
+{
+    user-select: none;
+    -moz-user-select: none;
+}
+#header-d a
+{
+    color: #159a00;
+    user-select: none;
+    -moz-user-select: none;
+    transition: .2s;
+}
+#header-d a:hover
+{
+    opacity: 0.6;
+}
+#products-container
+{
+    color: #2f3542;
+    height: auto;
+    overflow: hidden;
+    width: 90%;
+    border: 3px solid #EEE;
+    border-bottom-width: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px auto;
+    text-align: right;
+}
+.product-item
+{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 0 solid #EEE;
+    border-bottom-width: 3px;
+}
+.product-item:hover
+{
+    background: #eeeeee73;
+}
+.product-item img
+{
+    height: 100%;
+    width: 10%;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    user-select: none;
+    -moz-user-select: none;
+}
+.product-details
+{
+    width: 70%;
+    box-sizing: border-box;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.product-name
+{
+    font-size: 20px;
+}
+.product-desc
+{
+
+}
+.product-price
+{
+    color: #159a00;
+    font-family: Century;
+}
+.edit-delete
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.edit-delete a
+{
+    margin-right: 15px;
+    transition: .2s;
+    user-select: none;
+    -moz-user-select:none;
+    cursor: pointer;
+}
+.edit-delete a:hover
+{
+    opacity: .6;
+}
+.edit-delete a:nth-child(1)
+{
+    color: #159a00;
+}
+.edit-delete a:nth-child(2)
+{
+    color: #ff253a;
+}
+#confirm-dialogue
+{
+    height: auto;
+    overflow: hidden;
+    padding: 30px;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 2px #00000085;
+    text-align: center;
+}
+#opacity-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.7;
+}
+#delete-confirm
+{
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+#confirm-title
+{
+    user-select: none;
+    -moz-user-select: none;
+}
+#confirm-crad
+{
+    margin-top: 30px;
+}
+#confirm-crad a
+{
+    border: none;
+    color: white;
+    font-family: ChangaRegular;
+    padding: 8px 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .2s;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+}
+#confirm-crad a:hover
+{
+    opacity: 0.8;
+}
+#confirm-crad a:nth-child(1)
+{
+    background: #4cd137;
+}
+#confirm-crad a:nth-child(2)
+{
+    background: #ff6b6b;
+}

@@ -1,0 +1,85 @@
+*
+{
+
+}
+body
+{
+
+}
+@font-face
+{
+    font-family: LalezarRegular;
+    src: url("Resources/Fonts/Lalezar-Regular.ttf");
+}
+#container
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#side-menu
+{
+    height: 100%;
+    width: 20%;
+    background: #2f3542;
+    overflow-y: auto;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 20px;
+    scrollbar-width: thin;
+}
+#side-logo
+{
+    width: auto;
+    user-select: none;
+    -moz-user-select: none;
+    padding-bottom: 20px;
+    border: 0 solid white;
+    border-bottom-width: 2px;
+}
+#active-side-menu
+{
+    margin-top: 30px;
+}
+#side-menu button
+{
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-size: 18px;
+    font-family: ChangaRegular;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    background: #2f3542;
+    transition: .1s;
+}
+#frame-container
+{
+    height: 100%;
+    width: 80%;
+}
+iframe
+{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+#side-menu button:hover
+{
+    background: #242934;
+}
+#side-menu button:focus
+{
+    background: #4cd137;
+}
+#side-logo a
+{
+    box-sizing: border-box;
+    font-family: LalezarRegular;
+    font-size: 30px;
+    color: #4cd137d6;
+}

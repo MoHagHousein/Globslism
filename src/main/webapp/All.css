@@ -1,0 +1,268 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+::-moz-focus-inner
+{
+    border: 0;
+}
+::selection
+{
+    background: #c1ffb8;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: ChangaRegular;
+}
+@font-face
+{
+    font-family: ChangaRegular;
+    src: url("Resources/Fonts/Changa-Regular.ttf");
+}
+@font-face
+{
+    font-family: LalezarRegular;
+    src: url("Resources/Fonts/Lalezar-Regular.ttf");
+}
+@font-face
+{
+    font-family: ChangaMedium;
+    src: url("Resources/Fonts/Changa-Medium.ttf");
+}
+#header
+{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    user-select:none;
+    -moz-user-select: none;
+    justify-content: space-around;
+    position: fixed;
+    background: white;
+    border: 1px solid #EEE;
+    border-bottom-width: 0.5px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    top: 0;
+    z-index: 2;
+}
+#logo
+{
+    width: auto;
+    user-select:none;
+    -moz-user-select: none;
+    display: flex;
+    align-items: center;
+}
+#logo a
+{
+    box-sizing: border-box;
+    font-family: LalezarRegular;
+    font-size: 35px;
+    padding: 0 30px 0 0;
+    color: #4cd137d6;
+}
+#menu
+{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    align-items: center;
+    color: #2f3542;
+}
+#menu a
+{
+    padding: 30px;
+    color: #2f3542;
+    box-sizing: border-box;
+    transition: .1s;
+}
+#menu a:hover, #active-page
+{
+    padding: 30px;
+    border: 1px solid #4cd137;
+    border-bottom-width: 5px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    background: linear-gradient(transparent,#e8ffe5);
+}
+#sign-in-up
+{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    justify-content: space-between;
+}
+#sign-in-up a
+{
+    color: #2f3542;
+    padding: 10px;
+    transition: .2s;
+}
+#sign-in-up a:nth-child(1)
+{
+    color: white;
+    background: #4cd137;
+}
+#sign-in-up a:nth-child(1):hover ,#sign-in-up a:nth-child(2):hover
+{
+    opacity: 0.8;
+}
+#sign-in-up a:nth-child(2)
+{
+    color: #2f3542;
+}
+footer
+{
+    padding: 30px;
+    box-sizing: border-box;
+    color: white;
+    background:#2f3542;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+}
+#rights
+{
+    opacity: 0.8;
+    color: white;
+}
+#rights span
+{
+    font-family: LalezarRegular;
+    color: #4cd137d6;
+    font-size: 20px;
+}
+#social
+{
+
+}
+@media screen and (max-width: 1200px)
+{
+    #menu
+    {
+        display: none;
+    }
+    #logo a
+    {
+        padding: 0;
+    }
+    #sign-in-up
+    {
+        width: 41%;
+    }
+    #sign-in-up a
+    {
+        font-size: 10px;
+    }
+}
+#user-avatar
+{
+    height: 30px;
+    width: 30px;
+}
+#signed-in button
+{
+    height: 50px;
+    width: 110px;
+    border: none;
+    color: white;
+    background: #2f3542;
+    font-family: ChangaRegular;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: .2s;
+}
+#signed-in button:hover
+{
+    opacity: .8;
+}
+#signed-in
+{
+    display: flex;
+    align-items: center;
+    width: 22%;
+    justify-content: space-between;
+}
+#user-name
+{
+    font-size: 18px;
+    color: #4cd137;
+}
+#user-role
+{
+    color: gray;
+}
+#shopping-cart-icon
+{
+    height: 45px;
+    width: 45px;
+    background: #2f3542;
+    border-radius: 50%;
+    padding: 20px;
+    position: absolute;
+    top: 90vh;
+    left: 95vw;
+    transform: translate(-90%,-90%);
+    border: 4px solid #EEE;
+    cursor: pointer;
+    transition: .2s;
+    opacity: 0.9;
+}
+#shopping-cart-icon:hover
+{
+    opacity: 1;
+}
+#shopping-cart-icon embed
+{
+    width: 100%;
+    cursor: pointer;
+}
+#notify-circle
+{
+    height: 16px;
+    width: 16px;
+    background: #ff6b6b;
+    position: absolute;
+    top: 0;
+    left: 9px;
+    border-radius: 50%;
+    display: none;
+}
+#error-message
+{
+    position: fixed;
+    background: #ffe2e2;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    color: #ff6b6b;
+    border-radius: 4px;
+    border: 2px solid #ff6b6b;
+    align-items: center;
+    top: 105px;
+    right: 10px;
+    visibility: collapse;
+}
+#error-message svg
+{
+    height: 100%;
+    width: 31px;
+    margin-left: 10px;
+    padding: 4px;
+}
+#error-message p
+{
+    font-family: ChangaMedium;
+}
